@@ -31,8 +31,11 @@ import './editor.scss';
  */
 export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Angry Creative Woo Block – hello from the editor!', 'angry-creative-woo-block' ) }
+		<p {...useBlockProps()}>
+			{__(
+				'Angry Creative Woo Block – hello from the editor!',
+				'angry-creative-woo-block'
+			)}
 		</p>
 	);
 }
